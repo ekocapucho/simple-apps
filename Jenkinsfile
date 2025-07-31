@@ -32,10 +32,10 @@ pipeline {
                 sh'''
                 cd app
                 sonar-scanner \
-                Dsonar.projectKey=belajar \
-                Dsonar.sources=. \
-                Dsonar.host.url=http://172.23.8.124:9000 \
-                Dsonar.login=sqp_8667dc84b02cc19ce4b3e4e744b22a4e5a837332
+                -Dsonar.projectKey=belajar \
+                -Dsonar.sources=. \
+                -Dsonar.host.url=http://172.23.8.124:9000 \
+                -Dsonar.login=sqp_8667dc84b02cc19ce4b3e4e744b22a4e5a837332
                 '''
             }
         }
